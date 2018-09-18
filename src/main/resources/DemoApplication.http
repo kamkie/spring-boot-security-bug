@@ -1,0 +1,37 @@
+
+### rest - 403 on 2.0.4 and 2.0.5
+GET http://localhost:8080/demo
+Accept: application/json
+
+### rest - works on 2.0.4 and 2.0.5
+GET http://localhost:8080/demo/
+Accept: application/json
+
+### rest authorised - works on all
+GET http://localhost:8080/demo/hello
+token: token
+Accept: application/json
+
+### html - 403 on 2.0.4 and 2.0.5
+
+GET http://localhost:8080/demo
+Accept: text/html
+
+### html shows rest endpoint on 2.0.4 and 2.0.5
+
+GET http://localhost:8080/demo/
+Accept: text/html
+
+### works on 2.0.4, 403 on 2.0.5
+
+GET http://localhost:8080/demo/actuator/info
+
+### works on 2.0.4, 403 on 2.0.5
+
+GET http://localhost:8080/demo/actuator/health
+
+### works on 2.0.4 and 2.0.5
+
+GET http://localhost:8080/demo/docs/doc1.html
+
+###

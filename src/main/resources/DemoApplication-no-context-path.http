@@ -1,0 +1,29 @@
+
+### rest
+GET http://localhost:8080
+Accept: application/json
+
+### rest hello
+GET http://localhost:8080/hello
+token: token
+Accept: application/json
+
+### html returns rest - works with context path
+
+GET http://localhost:8080
+Accept: text/html
+
+###
+
+GET http://localhost:8080/actuator/info
+
+###
+
+GET http://localhost:8080/actuator/health
+
+###
+
+GET http://localhost:8080/docs/doc1.html
+Accept: text/html
+
+###
