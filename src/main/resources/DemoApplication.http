@@ -35,3 +35,6 @@ GET http://localhost:8080/demo/actuator/health
 GET http://localhost:8080/demo/docs/doc1.html
 
 ###
+GET http://localhost:8080/demo/docs/index.html
+
+###
